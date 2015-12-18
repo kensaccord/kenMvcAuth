@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>@ViewData["Title"] - kenMvcAuth</title>
+        @*<title>@ViewData["Title"] - KeShia's and Ken's Wedding</title>*@
 
         <environment names="Development">
             <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -17,6 +17,10 @@
         </environment>
     </head>
     <body>
+        <header>
+            <img src="~/images/kandk.jpg" alt="ASP.NET" class="img-responsive" />
+            
+        </header>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -26,23 +30,31 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a asp-controller="Home" asp-action="Index" class="navbar-brand">kenMvcAuth</a>
+                    @*<a asp-controller="Home" asp-action="Index" class="navbar-brand">kenMvcAuth</a>*@
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                        <li><a asp-controller="Home" asp-action="About">About</a></li>
+                        <li><a asp-controller="Home" asp-action="OurStory">Our Story</a></li>
+                        <li><a asp-controller="Home" asp-action="Events">Events</a></li>
+                        <li><a asp-controller="Home" asp-action="Registry">Registry</a></li>
+                        <li><a asp-controller="Home" asp-action="Accommodations">Accommodations</a></li>
+                        <li><a asp-controller="Home" asp-action="About">RSVP</a></li>
                         <li><a asp-controller="Home" asp-action="Contact">Contact</a></li>
                     </ul>
-                    @await Html.PartialAsync("_LoginPartial")
+                    @*This is the register and login for the site*@
+                    @*@await Html.PartialAsync("_LoginPartial")*@
                 </div>
             </div>
         </div>
         <div class="container body-content">
             @RenderBody()
+            <div class="countdown">
+                @ViewData["CountDown"]
+            </div>
             <hr />
             <footer>
-                <p>&copy; 2015 - kenMvcAuth</p>
+                <p>&copy; 2015 - Ken's Custom Web Sites</p>
             </footer>
         </div>
 

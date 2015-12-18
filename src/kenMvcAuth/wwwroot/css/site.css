@@ -1,6 +1,20 @@
-﻿body {
+﻿/*
+    Slate Blue - #8395A1
+    Slate Light Blue - #99ABAF
+    Pink - #E8A9A0
+    Pink Light - #EECDC4
+    Gray - #D9CBC0
+    Green - #2A321D
+    Navy - #000066
+*/
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:#FEF2E6;
+    color: #633e2b;
+    font-family:'Script MT';
+    text-align: center;
 }
 
 /* Wrapping element */
@@ -8,6 +22,8 @@
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
+    font-family:'Comic Sans MS';
+    text-align: center;
 }
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
@@ -31,4 +47,41 @@ textarea {
     .carousel-caption {
         z-index: 10 !important;
     }
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family:'Script MT';
+    text-align: center;
+}
+
+header{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+footer{
+    color: #FEF2E6;
+    background-color: #633e2b;
+    border:3px solid #e69053;
+}
+
+#navbarid{
+    font-size:large;
+    background-color: #633e2b;
+}
+img{
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.countdown{
+    font-size:40px;
+}
+
+.navbar {
+    color: #FEF2E6;
+    background-color: #633e2b;    
 }
